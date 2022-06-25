@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Aptech | </title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- ==================loader================ -->
+    <div class="loader-container">
+            <div class="welcome-section content-hidden">
+        <div class="content-wrap">
+            <ul class="fly-in-text">
+                <li>W</li>
+                <li>E</li>
+                <li>L</li>
+                <li>C</li>
+                <li>O</li>
+                <li>M</li>
+                <li>E</li>
+            </ul>
+            
+            <p class="enter-button">New User</p>
+        </div>
+    </div>
+    
+    </div>
+
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span id="aptechlogo" class="icon">
+                            <img id="imagelogo" src="./assets/imgs/aptechlogo.png" alt="">
+                        </span>
+                        <!-- <span class="title">Brand Name</span> -->
+                    </a>
+                </li>
+
+                <li id="dashboard">
+                    <a href="./index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+              
+
+                <li id="messages">
+                    <a   href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span  class="title">Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/hacker.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div id="cardBox" class="cardBox">
+               
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">0</div>
+                        <div class="cardName">Posts</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">7</div>
+                        <div class="cardName">Chats</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <!-- <div class="card">
+                    <div>
+                        <div class="numbers">#0</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- ================ teams List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2 id="recent">Recent Activity</h2>
+                        <a id="view-all" href="../team/index.html" class="btn">View All</a>
+                    </div>
+
+                   <div class="table" id="table">
+                    <table id="tryingtable">
+                      <h1 id="noteamhead">NO TEAM YET</h1>
+                    </table>
+                   </div>
+                </div>
+
+                <!-- ================= New Team ================ -->
+                <div  class="recentTeam">
+                    <div class="cardHeader">
+                        <h2>NO TEAM  </h2>
+                        
+                    </div>
+
+                    <table id="team-requests">
+                        <H1>Please join a team</H1>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+    
+    <script type="text/javascript">
+            
+        $(function() {
+            
+            var welcomeSection = $('.welcome-section'),
+                enterButton = welcomeSection.find('.enter-button');
+            
+            setTimeout(function() {
+                welcomeSection.removeClass('content-hidden');
+            }, 500);
+            
+           
+            
+            
+        })();
+        
+        
+        
+    </script>
+    <script>
+        $(window).on("load",function(){
+            setTimeout(function() {
+                $(".loader-container").fadeOut("slow");
+              }, 5000);
+            
+        });
+    </script>
+    
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
